@@ -1,4 +1,4 @@
-from battleship_functions import *
+from battleship import *
 def menu_battleship():
     clear()
     try:
@@ -38,7 +38,7 @@ def menu_choice():
         menu_choice()
 
     if choice ==1 or choice ==2:
-        return choice  
+        return choice
     else:
         print ("Invalid input! (must be 1 or 2)")
         time.sleep(1)
