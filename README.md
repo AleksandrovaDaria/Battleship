@@ -99,3 +99,8 @@ Extend the game so that there is a single player mode, where the user can play a
   3. If multiplayer is chosen as the game mode, the game works with two players, as in the above tasks.
 
   4. If single player is chosen as the game mode, Player 2 is the computer. The AI generates its moves during the placement and shooting phases.
+
+  ## comments for 04.03.23
+  
+  
+  For today, the program is in the process of being completed, before the presentation we want to add the AI option, so now it is not work correct
