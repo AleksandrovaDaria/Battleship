@@ -1,7 +1,9 @@
 from battleship import *
 def menu_battleship():
+    print_ship()
+    time.sleep(4)
     clear()
-    board_size= int(input_with_quit("Enter board size (5-10): "))
+    board_size= int(input_with_quit("Welcome to Battleship game!\nDuring all game you can quit game writnig \"quit\" \n \nEnter board size (5-10): "))
     if 5<=board_size<=10:
         if board_size==10:
             ship_size=[1,1,1,1,2,2,2,3,3,4]
