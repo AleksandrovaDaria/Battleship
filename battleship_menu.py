@@ -1,13 +1,7 @@
 from battleship import *
 def menu_battleship():
     clear()
-    try:
-        board_size= int(input("Enter board size (5-10): "))
-    except:
-        print ("Invalid input! (must be between 5-10)")
-        time.sleep(1)
-        return menu_battleship()
-
+    board_size= int(input_with_quit("Enter board size (5-10): "))
     if 5<=board_size<=10:
         if board_size==10:
             ship_size=[1,1,1,1,2,2,2,3,3,4]
@@ -30,13 +24,7 @@ def menu_battleship():
 
 def menu_choice():
     clear()
-    try:
-        choice= int(input("1. Single player \n2. Multiplayer\n Choose options: "))
-    except:
-        print ("Invalid input! (must be 1 or 2)")
-        time.sleep(1)
-        return menu_choice()
-
+    choice= int(input_with_quit("1. Single player \n2. Multiplayer\n Choose options: "))
     if choice ==1 or choice ==2:
         return choice  
     else:
