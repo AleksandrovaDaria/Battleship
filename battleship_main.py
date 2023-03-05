@@ -28,8 +28,12 @@ elif choice==1:
     first_player_board=play_game(board_size,ship_size)
     clear()
     ai_play_board=ai_play_game(board_size,ship_size)
+    clear()
     while True:
         print("active player is ",player_active)
         if player_active == 1: 
             shooting(first_player_board_shooting,ai_play_board, player_active,board_size)
             player_active = 2
+        else:
+            shooting_ai(second_player_board_shooting,first_player_board, player_active,board_size)
+            player_active = 1
